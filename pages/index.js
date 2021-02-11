@@ -11,6 +11,17 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn'
 import EmailIcon from '@material-ui/icons/Email'
 
 export default function Home() {
+  const container = {
+    hidden: {
+      opacity: 0,
+      transition: {
+        delay: 1,
+      },
+    },
+    show: {
+      opacity: 1,
+    },
+  }
   return (
     <div className={styles.container}>
       <Head>
@@ -29,14 +40,22 @@ export default function Home() {
             <h1 className={styles.title}>Hello, I'm Joe Kanakaraj.</h1>
           </Grid>
           <Grid item xs={12}>
-            <motion.p animate={{ scale: 1 }} className={styles.description}>
+            <motion.p
+              animate={{ opacity: [0, 1], y: [150, 0] }}
+              className={styles.description}
+            >
               But everyone just calls me Joe K.
             </motion.p>
           </Grid>
           <Grid item xs={12}>
-            <p className={styles.description}>
+            <motion.p
+              animate="show"
+              initial="hidden"
+              variants={container}
+              className={styles.description}
+            >
               I'm a Lead Software Engineer at Rightpoint.
-            </p>
+            </motion.p>
           </Grid>
           <Grid item xs={12}>
             <p className={styles.description}>
