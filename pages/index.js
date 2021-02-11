@@ -1,5 +1,6 @@
 import Head from 'next/head'
-import { motion } from 'framer-motion'
+import { useEffect } from 'react'
+import { motion, useAnimation, useMotionValue, animate } from 'framer-motion'
 import styles from '../styles/Home.module.css'
 
 import Grid from '@material-ui/core/Grid'
@@ -11,17 +12,28 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn'
 import EmailIcon from '@material-ui/icons/Email'
 
 export default function Home() {
-  const container = {
-    hidden: {
-      opacity: 0,
+  const title = {
+    visible: {
+      opacity: 1,
       transition: {
-        delay: 1,
+        when: 'beforeChildren',
+        staggerChildren: 2,
       },
     },
-    show: {
-      opacity: 1,
+    hidden: {
+      opacity: 0,
+      x: '100%',
+      transition: {
+        when: 'afterChildren',
+      },
     },
   }
+
+  const text = {
+    visible: { opacity: 1, x: 0 },
+    hidden: { opacity: 0, x: -100 },
+  }
+
   return (
     <div className={styles.container}>
       <Head>
@@ -37,24 +49,24 @@ export default function Home() {
       <main className={styles.main}>
         <Grid container spacing={3}>
           <Grid item xs={12}>
-            <h1 className={styles.title}>Hello, I'm Joe Kanakaraj.</h1>
+            <motion.h1
+              className={styles.title}
+              initial="hidden"
+              animate="visible"
+              variants={title}
+            >
+              <motion.span variants={text}>Hello...</motion.span>{' '}
+              <motion.span variants={text}>I'm Joe Kanakaraj</motion.span>
+            </motion.h1>
           </Grid>
           <Grid item xs={12}>
-            <motion.p
-              animate={{ opacity: [0, 1], y: [150, 0] }}
-              className={styles.description}
-            >
+            <motion.p className={styles.description}>
               But everyone just calls me Joe K.
             </motion.p>
           </Grid>
           <Grid item xs={12}>
-            <motion.p
-              animate="show"
-              initial="hidden"
-              variants={container}
-              className={styles.description}
-            >
-              I'm a Lead Software Engineer at Rightpoint.
+            <motion.p className={styles.description}>
+              I'm a Lead Software Engineer at <a href="#">Rightpoint</a>.
             </motion.p>
           </Grid>
           <Grid item xs={12}>
@@ -71,8 +83,8 @@ export default function Home() {
           <Grid item xs={6} md={2} className={styles.icon}>
             <motion.div
               whileHover={{
-                scale: [1, 2, 1],
-                rotate: [0, 360, 0],
+                scale: [1, 2],
+                rotate: [0, 360],
               }}
               whileTap={{ scale: 0.9 }}
             >

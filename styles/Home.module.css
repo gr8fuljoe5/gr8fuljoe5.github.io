@@ -11,6 +11,8 @@
   color: #343;
 }
 
+.container a {color: red; text-decoration: underline;}
+
 .main {
   padding: 5rem 0;
   flex: 1;
@@ -22,28 +24,11 @@
 .main svg {
   font-size: 50px;
   text-align: center;
-}
-
-.title a {
-  color: #0070f3;
-  text-decoration: none;
-}
-
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
+  cursor: pointer;
 }
 
 .title {
-  margin: 0;
-  padding: 0;
   font-size: 4rem;
-}
-
-.title,
-.description {
-  text-align: center;
 }
 
 .description {
@@ -61,7 +46,8 @@
 .twitter {
   color: rgb(0,172,237);
 }
-
+.title, 
+.description, 
 .icon {
   text-align: center;
 }
