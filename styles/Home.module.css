@@ -96,8 +96,8 @@
 }
 
 @media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
+  .main {
+    justify-content: flex-start;
+    padding: 1rem 0;
   }
 }

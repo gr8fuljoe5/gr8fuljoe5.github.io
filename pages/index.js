@@ -12,17 +12,16 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn'
 import EmailIcon from '@material-ui/icons/Email'
 
 export default function Home() {
-  const title = {
+  const section = {
     visible: {
       opacity: 1,
       transition: {
         when: 'beforeChildren',
-        staggerChildren: 2,
+        staggerChildren: 0.9,
       },
     },
     hidden: {
       opacity: 0,
-      x: '100%',
       transition: {
         when: 'afterChildren',
       },
@@ -30,8 +29,18 @@ export default function Home() {
   }
 
   const text = {
+    visible: { opacity: 1 },
+    hidden: { opacity: 0 },
+  }
+
+  const paragraph = {
     visible: { opacity: 1, x: 0 },
-    hidden: { opacity: 0, x: -100 },
+    hidden: { opacity: 0, x: -300 },
+  }
+
+  const paragraph_reverse = {
+    visible: { opacity: 1, x: 0 },
+    hidden: { opacity: 0, x: 300 },
   }
 
   return (
@@ -49,36 +58,36 @@ export default function Home() {
       <main className={styles.main}>
         <Grid container spacing={3}>
           <Grid item xs={12}>
-            <motion.h1
-              className={styles.title}
+            <motion.section
               initial="hidden"
               animate="visible"
-              variants={title}
+              variants={section}
             >
-              <motion.span variants={text}>Hello...</motion.span>{' '}
-              <motion.span variants={text}>I'm Joe Kanakaraj</motion.span>
-            </motion.h1>
-          </Grid>
-          <Grid item xs={12}>
-            <motion.p className={styles.description}>
-              But everyone just calls me Joe K.
-            </motion.p>
-          </Grid>
-          <Grid item xs={12}>
-            <motion.p className={styles.description}>
-              I'm a Lead Software Engineer at <a href="#">Rightpoint</a>.
-            </motion.p>
-          </Grid>
-          <Grid item xs={12}>
-            <p className={styles.description}>
-              I was born and raised in Dobbs Ferry, NY and I recieved my degree
-              in Information Management and Technology from Syracuse University.
-            </p>
-          </Grid>
-          <Grid item xs={12}>
-            <p className={styles.description}>
-              My hobbies include snowboarding, baseball and fine IPA's.
-            </p>
+              <h1 className={styles.title}>
+                <motion.span variants={text}>Hello...</motion.span>{' '}
+                <motion.span variants={text}>I'm Joe Kanakaraj</motion.span>
+              </h1>
+              <motion.p className={styles.description} variants={paragraph}>
+                But everyone just calls me Joe K.
+              </motion.p>
+              <motion.p
+                className={styles.description}
+                variants={paragraph_reverse}
+              >
+                I'm a Lead Software Engineer at <a href="#">Rightpoint</a>.
+              </motion.p>
+              <motion.p className={styles.description} variants={paragraph}>
+                I was born and raised in Dobbs Ferry, NY and I recieved my
+                degree in Information Management and Technology from Syracuse
+                University.
+              </motion.p>
+              <motion.p
+                className={styles.description}
+                variants={paragraph_reverse}
+              >
+                My hobbies include snowboarding, baseball and fine IPA's.
+              </motion.p>
+            </motion.section>
           </Grid>
           <Grid item xs={6} md={2} className={styles.icon}>
             <motion.div
