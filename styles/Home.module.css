@@ -1,3 +1,5 @@
+
+
 .container {
   min-height: 100vh;
   padding: 0 0.5rem;
@@ -5,6 +7,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-family: 'Heebo', sans-serif;
+  color: #343;
 }
 
 .main {
@@ -15,7 +19,10 @@
   justify-content: center;
   align-items: center;
 }
-
+.main svg {
+  font-size: 50px;
+  text-align: center;
+}
 
 .title a {
   color: #0070f3;
@@ -30,7 +37,7 @@
 
 .title {
   margin: 0;
-  line-height: 1.15;
+  padding: 0;
   font-size: 4rem;
 }
 
@@ -44,13 +51,19 @@
   font-size: 1.5rem;
 }
 
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
+.fb {
+  color: rgb(109,132,180);
+}
+
+.linkedIn {
+  color:  rgb(0,119,181);
+}
+.twitter {
+  color: rgb(0,172,237);
+}
+
+.icon {
+  text-align: center;
 }
 
 .grid {
