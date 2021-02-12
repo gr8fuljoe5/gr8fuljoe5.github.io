@@ -56,12 +56,12 @@ export default function Home() {
 
   const PARAGRAPH = {
     visible: { opacity: 1, x: 0 },
-    hidden: { opacity: 0, x: -300 },
+    hidden: { opacity: 0, x: -100 },
   }
 
   const PARAGRAPH_REVERSE = {
     visible: { opacity: 1, x: 0 },
-    hidden: { opacity: 0, x: 300 },
+    hidden: { opacity: 0, x: 100 },
   }
 
   const ICONS = {
@@ -117,8 +117,11 @@ export default function Home() {
                     Dobbs Ferry, NY
                   </a>{' '}
                   and I currently live in{' '}
-                  <a href="https://www.bkmag.com/" target="_blank">
-                    Brooklyn
+                  <a
+                    href="https://en.wikipedia.org/wiki/East_Williamsburg,_Brooklyn"
+                    target="_blank"
+                  >
+                    East Williamsburg, Brooklyn
                   </a>
                   .
                 </motion.p>
@@ -135,7 +138,40 @@ export default function Home() {
                   className={styles.description}
                   variants={PARAGRAPH_REVERSE}
                 >
-                  My hobbies include snowboarding, baseball and fine IPA's.
+                  My hobbies include snowboarding, golfing, fine IPA's, being
+                  the Worlds Greatest Uncle&trade; and following the{' '}
+                  <a
+                    href="http://www.yankees.com"
+                    className={styles.yankees}
+                    target="_blank"
+                  >
+                    Yankees
+                  </a>
+                  ,{' '}
+                  <a
+                    href="https://www.newyorkjets.com/"
+                    className={styles.jets}
+                    target="_blank"
+                  >
+                    Jets
+                  </a>
+                  ,{' '}
+                  <a
+                    href="https://cuse.com/"
+                    className={styles.cuse}
+                    target="_blank"
+                  >
+                    Syracuse Atheltics
+                  </a>{' '}
+                  and{' '}
+                  <a
+                    href="https://www.whufc.com/"
+                    className={styles.whu}
+                    target="_blank"
+                  >
+                    West Ham United
+                  </a>
+                  .
                 </motion.p>
               </motion.section>
             </Grid>

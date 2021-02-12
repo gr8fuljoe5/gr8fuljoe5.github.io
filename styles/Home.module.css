@@ -9,9 +9,10 @@
   align-items: center;
   font-family: 'Heebo', sans-serif;
   color: #343;
+  
 }
 
-.container a {color: red; text-decoration: underline;}
+.container a {color: black; text-decoration: underline;  text-decoration-color: red;}
 
 .main {
   padding: 5rem 0;
@@ -20,6 +21,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 75%
 }
 .main svg {
   font-size: 50px;
@@ -56,9 +58,29 @@
   color: rgb(207,96,226);
 }
 
+a.yankees {
+  color: #0B1F46;
+  text-decoration-color: #C5C3C4;
+}
+a.jets {
+  color: #09563D;
+  text-decoration-color: black;
+}
+
+a.cuse {
+  color: #D44501;
+  text-decoration-color:#072F6C;
+}
+
+a.whu {
+  color: #7D2838;
+  text-decoration-color: #00B1E7;
+}
+
 @media (max-width: 600px) {
   .main {
     justify-content: flex-start;
     padding: 1rem 0;
+    width: 95%;
   }
 }
