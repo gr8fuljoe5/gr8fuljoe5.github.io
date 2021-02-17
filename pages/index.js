@@ -113,11 +113,16 @@ export default function Home() {
                 </motion.p>
                 <motion.p className={styles.description} variants={PARAGRAPH}>
                   I was born and raised in{' '}
-                  <a href="https://en.wikipedia.org/wiki/Dobbs_Ferry,_New_York">
+                  <a
+                    href="https://en.wikipedia.org/wiki/Dobbs_Ferry,_New_York"
+                    target="_blank"
+                    className={styles.df}
+                  >
                     Dobbs Ferry, NY
                   </a>{' '}
                   and I currently live in{' '}
                   <a
+                    className={styles.nets}
                     href="https://en.wikipedia.org/wiki/East_Williamsburg,_Brooklyn"
                     target="_blank"
                   >

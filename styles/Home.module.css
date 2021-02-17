@@ -1,3 +1,30 @@
+@value rp_primary: black;
+@value rp_secondary: red;
+@value rp_tertiary: white;
+
+
+@value syr_primary: #D44501;
+@value syr_secondary: #072F6C;
+@value syr_tertiary: white;
+
+@value nyy_primary: #0B1F46;
+@value nyy_secondary: #C5C3C4;
+@value nyy_tertiary: white;
+
+@value nyj_primary: #09563D;
+@value nyj_secondary: black;
+@value nyj_tertiary: white;
+
+@value bk_primary: black;
+@value bk_secondary: black;
+@value bk_tertiary: white;
+
+@value whu_primary: #7D2838;
+@value whu_secondary: #00B1E7;
+@value whu_tertiary: #F8D841;
+
+
+
 .container {
   min-height: 100vh;
   padding: 0 0.5rem;
@@ -10,7 +37,9 @@
   
 }
 
-.container a {color: black; text-decoration: underline;  text-decoration-color: red;}
+.container a {color: rp_primary; text-decoration: underline;  text-decoration-color: rp_secondary;}
+.container a:hover {color: rp_secondary; text-decoration: underline;  text-decoration-color:rp_tertiary;
+  background-color: rp_primary;}
 
 .main {
   padding: 5rem 0;
@@ -42,6 +71,77 @@
   text-align: center;
 }
 
+/*LINKS*/
+
+a.yankees {
+  color: nyy_primary;
+  text-decoration-color: nyy_secondary;
+}
+
+a.yankees:hover {
+  color: nyy_secondary;
+  text-decoration-color:nyy_tertiary;
+  background-color: nyy_primary;
+}
+
+
+a.jets {
+  color: nyj_primary;
+  text-decoration-color: nyj_secondary;
+}
+
+a.jets:hover {
+  color: nyj_secondary;
+  text-decoration-color:nyj_tertiary;
+  background-color: nyj_primary;
+}
+
+a.nets {
+  color: bk_primary;
+  text-decoration-color: bk_secondary;
+}
+
+a.nets:hover {
+  color: bk_tertiary;
+  text-decoration-color: bk_tertiary;
+  background-color: bk_primary;
+}
+
+a.cuse {
+  color: syr_primary;
+  text-decoration-color:syr_secondary;
+}
+
+a.cuse:hover {
+  color: syr_secondary;
+  text-decoration-color:syr_tertiary;
+  background-color: syr_primary;
+}
+
+a.whu {
+  color: whu_primary;
+  text-decoration-color: whu_secondary;
+}
+
+a.whu:hover {
+  color: whu_secondary;
+  text-decoration-color: whu_tertiary;
+  background-color: whu_primary;
+}
+
+a.df {
+  color: blue;
+  text-decoration-color: blue;
+}
+
+a.df:hover {
+  color: white;
+  text-decoration-color: white;
+  background-color: blue;
+}
+
+/*ICONS*/
+
 .fb {
   color: rgb(109,132,180);
 }
@@ -56,30 +156,9 @@
   color: rgb(207,96,226);
 }
 
-a.yankees {
-  color: #0B1F46;
-  text-decoration-color: #C5C3C4;
-}
-a.jets {
-  color: #09563D;
-  text-decoration-color: black;
-}
-
-a.nets {
-  color: black;
-  text-decoration-color: black;
-}
 
 
-a.cuse {
-  color: #D44501;
-  text-decoration-color:#072F6C;
-}
 
-a.whu {
-  color: #7D2838;
-  text-decoration-color: #00B1E7;
-}
 
 @media (max-width: 600px) {
   .main {
