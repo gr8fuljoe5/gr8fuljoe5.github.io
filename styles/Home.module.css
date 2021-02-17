@@ -37,9 +37,7 @@
   
 }
 
-.container a {color: rp_primary; text-decoration: underline;  text-decoration-color: rp_secondary;}
-.container a:hover {color: rp_secondary; text-decoration: underline;  text-decoration-color:rp_tertiary;
-  background-color: rp_primary;}
+.container a {color: black;}
 
 .main {
   padding: 5rem 0;
@@ -72,6 +70,10 @@
 }
 
 /*LINKS*/
+
+a.rp {color: rp_primary; text-decoration: underline;  text-decoration-color: rp_secondary;}
+a.rp:hover {color: rp_secondary; text-decoration: underline;  text-decoration-color:rp_tertiary;
+  background-color: rp_primary;}
 
 a.yankees {
   color: nyy_primary;

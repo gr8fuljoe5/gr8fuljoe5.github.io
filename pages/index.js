@@ -106,7 +106,11 @@ export default function Home() {
                   variants={PARAGRAPH_REVERSE}
                 >
                   I'm a Lead Software Engineer at{' '}
-                  <a href="http://www.rightpoint.com" target="_blank">
+                  <a
+                    href="http://www.rightpoint.com"
+                    target="_blank"
+                    className={styles.rp}
+                  >
                     Rightpoint
                   </a>{' '}
                   with 20+ years of experience in front-end engineering.
