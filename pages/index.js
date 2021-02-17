@@ -109,7 +109,7 @@ export default function Home() {
                   <a href="http://www.rightpoint.com" target="_blank">
                     Rightpoint
                   </a>{' '}
-                  with 20+ years of experience in front-end engineering. .
+                  with 20+ years of experience in front-end engineering.
                 </motion.p>
                 <motion.p className={styles.description} variants={PARAGRAPH}>
                   I was born and raised in{' '}
@@ -133,8 +133,7 @@ export default function Home() {
                 <motion.p
                   className={styles.description}
                   variants={PARAGRAPH_REVERSE}
-                ></motion.p>
-                <motion.p className={styles.description} variants={PARAGRAPH}>
+                >
                   I graduated from{' '}
                   <a
                     href="http://www.syr.edu/"
@@ -153,10 +152,7 @@ export default function Home() {
                   </a>
                   .
                 </motion.p>
-                <motion.p
-                  className={styles.description}
-                  variants={PARAGRAPH_REVERSE}
-                >
+                <motion.p className={styles.description} variants={PARAGRAPH}>
                   My hobbies include snowboarding, golfing, fine IPA's, being
                   the Worlds Greatest Uncle&trade; and following the{' '}
                   <a
