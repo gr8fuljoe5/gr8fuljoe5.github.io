@@ -106,18 +106,27 @@ export default function Home() {
                   variants={PARAGRAPH_REVERSE}
                 >
                   I'm a Lead Software Engineer at{' '}
-                  <a href="http://www.rightpoint.com" target="_blank">
+                  <a
+                    href="http://www.rightpoint.com"
+                    target="_blank"
+                    className={styles.rp}
+                  >
                     Rightpoint
-                  </a>
-                  .
+                  </a>{' '}
+                  with 20+ years of experience in front-end engineering.
                 </motion.p>
                 <motion.p className={styles.description} variants={PARAGRAPH}>
                   I was born and raised in{' '}
-                  <a href="https://en.wikipedia.org/wiki/Dobbs_Ferry,_New_York">
+                  <a
+                    href="https://en.wikipedia.org/wiki/Dobbs_Ferry,_New_York"
+                    target="_blank"
+                    className={styles.df}
+                  >
                     Dobbs Ferry, NY
                   </a>{' '}
                   and I currently live in{' '}
                   <a
+                    className={styles.nets}
                     href="https://en.wikipedia.org/wiki/East_Williamsburg,_Brooklyn"
                     target="_blank"
                   >
@@ -128,16 +137,26 @@ export default function Home() {
                 <motion.p
                   className={styles.description}
                   variants={PARAGRAPH_REVERSE}
-                ></motion.p>
-                <motion.p className={styles.description} variants={PARAGRAPH}>
-                  I graduated from Syracuse University with a degree in
-                  Information Management and Technology and I have 20+ years
-                  experience in the field of Front-end Engineering.
-                </motion.p>
-                <motion.p
-                  className={styles.description}
-                  variants={PARAGRAPH_REVERSE}
                 >
+                  I graduated from{' '}
+                  <a
+                    href="http://www.syr.edu/"
+                    className={styles.cuse}
+                    target="_blank"
+                  >
+                    Syracuse University
+                  </a>{' '}
+                  with a degree in{' '}
+                  <a
+                    href="https://ischool.syr.edu/"
+                    target="_blank"
+                    className={styles.cuse}
+                  >
+                    Information Management and Technology
+                  </a>
+                  .
+                </motion.p>
+                <motion.p className={styles.description} variants={PARAGRAPH}>
                   My hobbies include snowboarding, golfing, fine IPA's, being
                   the Worlds Greatest Uncle&trade; and following the{' '}
                   <a
@@ -154,6 +173,14 @@ export default function Home() {
                     target="_blank"
                   >
                     Jets
+                  </a>
+                  ,{' '}
+                  <a
+                    href="https://www.nba.com/nets/"
+                    className={styles.nets}
+                    target="_blank"
+                  >
+                    Nets
                   </a>
                   ,{' '}
                   <a
@@ -186,48 +213,34 @@ export default function Home() {
             justify="space-between"
           >
             <Grid item xs={6} md={2} className={styles.icon}>
-              <motion.div
-                // whileHover={{
-                //   scale: [1, 2],
-                //   rotate: [0, 360],
-                // }}
-                // whileTap={{ scale: 0.9 }}
-                variants={ICONS}
-                custom={0}
-              >
-                <GitHubIcon />
+              <motion.div whileTap={{ scale: 0.9 }} variants={ICONS} custom={0}>
+                <a href="https://github.com/gr8fuljoe5" target="_blank">
+                  <GitHubIcon />
+                </a>
               </motion.div>
             </Grid>
             <Grid item xs={6} md={2} className={styles.icon}>
-              <motion.div
-                // whileHover={{
-                //   scale: [1, 2, 1],
-                //   rotate: [0, 360, 0],
-                // }}
-                // whileTap={{ scale: 0.9 }}
-                variants={ICONS}
-                custom={2}
-              >
+              <motion.div whileTap={{ scale: 0.9 }} variants={ICONS} custom={2}>
                 <TwitterIcon className={styles.twitter} variants={ICONS} />
               </motion.div>
             </Grid>
             <Grid item xs={6} md={2} className={styles.icon}>
-              <motion.div variants={ICONS}>
+              <motion.div whileTap={{ scale: 0.9 }} variants={ICONS}>
                 <FacebookIcon className={styles.fb} />
               </motion.div>
             </Grid>
             <Grid item xs={6} md={2} className={styles.icon}>
-              <motion.div variants={ICONS}>
+              <motion.div whileTap={{ scale: 0.9 }} variants={ICONS}>
                 <InstagramIcon className={styles.instagram} />
               </motion.div>
             </Grid>
             <Grid item xs={6} md={2} className={styles.icon}>
-              <motion.div variants={ICONS}>
+              <motion.div whileTap={{ scale: 0.9 }} variants={ICONS}>
                 <LinkedInIcon className={styles.linkedIn} />
               </motion.div>
             </Grid>
             <Grid item xs={6} md={2} className={styles.icon}>
-              <motion.div variants={ICONS}>
+              <motion.div whileTap={{ scale: 0.9 }} variants={ICONS}>
                 <EmailIcon />
               </motion.div>
             </Grid>
