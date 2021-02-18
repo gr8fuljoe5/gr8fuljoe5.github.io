@@ -95,7 +95,7 @@ export default function Home() {
                 animate="visible"
               >
                 <h1 className={styles.title}>
-                  <motion.span variants={TEXT}>Hello...</motion.span>{' '}
+                  <motion.span variants={TEXT}>Hello....</motion.span>{' '}
                   <motion.span variants={TEXT}>I'm Joe Kanakaraj</motion.span>
                 </h1>
                 <motion.p className={styles.description} variants={PARAGRAPH}>
