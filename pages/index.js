@@ -204,7 +204,12 @@ export default function Home() {
           </Grid>
         </section>
 
-        <motion.section variants={ICON_TRAY} initial="hidden" animate="visible">
+        <motion.section
+          variants={ICON_TRAY}
+          initial="hidden"
+          animate="visible"
+          className={styles.iconContainer}
+        >
           <Grid
             container
             spacing={3}
