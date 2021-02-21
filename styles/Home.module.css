@@ -144,6 +144,10 @@ a.df:hover {
 
 /*ICONS*/
 
+.iconContainer {
+  margin-top: 2rem;
+}
+
 .fb {
   color: rgb(109,132,180);
 }
@@ -167,5 +171,16 @@ a.df:hover {
     justify-content: flex-start;
     padding: 1rem 0;
     width: 95%;
+  }
+  .title {
+    font-size: 2rem;
+  }
+
+  .description {
+    line-height: 1.5;
+    font-size: 1rem;
+  }
+  .iconContainer {
+    margin-top: 3rem;
   }
 }
