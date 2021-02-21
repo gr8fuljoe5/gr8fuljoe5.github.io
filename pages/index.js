@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import Head from 'next/head'
 import { motion } from 'framer-motion'
 import styles from '../styles/Home.module.css'
@@ -221,27 +220,46 @@ export default function Home() {
             </Grid>
             <Grid item xs={6} md={2} className={styles.icon}>
               <motion.div whileTap={{ scale: 0.9 }} variants={ICONS} custom={2}>
-                <TwitterIcon className={styles.twitter} variants={ICONS} />
+                <a href="https://twitter.com/joekanakaraj" target="_blank">
+                  <TwitterIcon className={styles.twitter} variants={ICONS} />
+                </a>
               </motion.div>
             </Grid>
             <Grid item xs={6} md={2} className={styles.icon}>
               <motion.div whileTap={{ scale: 0.9 }} variants={ICONS}>
-                <FacebookIcon className={styles.fb} />
+                <a
+                  href="https://www.facebook.com/joe.kanakaraj/"
+                  target="_blank"
+                >
+                  <FacebookIcon className={styles.fb} />
+                </a>
               </motion.div>
             </Grid>
             <Grid item xs={6} md={2} className={styles.icon}>
               <motion.div whileTap={{ scale: 0.9 }} variants={ICONS}>
-                <InstagramIcon className={styles.instagram} />
+                <a
+                  href="https://www.instagram.com/joekanakaraj/"
+                  target="_blank"
+                >
+                  <InstagramIcon className={styles.instagram} />
+                </a>
               </motion.div>
             </Grid>
             <Grid item xs={6} md={2} className={styles.icon}>
               <motion.div whileTap={{ scale: 0.9 }} variants={ICONS}>
-                <LinkedInIcon className={styles.linkedIn} />
+                <a
+                  href="https://www.linkedin.com/in/jkanakaraj/"
+                  target="_blank"
+                >
+                  <LinkedInIcon className={styles.linkedIn} />
+                </a>
               </motion.div>
             </Grid>
             <Grid item xs={6} md={2} className={styles.icon}>
               <motion.div whileTap={{ scale: 0.9 }} variants={ICONS}>
-                <EmailIcon />
+                <a href="mailto:joe.kanakaraj@gmail.com">
+                  <EmailIcon />
+                </a>
               </motion.div>
             </Grid>
           </Grid>
