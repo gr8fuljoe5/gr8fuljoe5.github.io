@@ -104,13 +104,13 @@ export default function Home() {
                   className={styles.description}
                   variants={PARAGRAPH_REVERSE}
                 >
-                  I'm a Lead Software Engineer at{' '}
+                  I'm a Staff Software Engineer at{' '}
                   <a
-                    href="http://www.rightpoint.com"
+                    href="http://www.eargo.com"
                     target="_blank"
                     className={styles.rp}
                   >
-                    Rightpoint
+                    Eargo
                   </a>{' '}
                   with 20+ years of experience in front-end engineering.
                 </motion.p>
